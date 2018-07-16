@@ -1,5 +1,6 @@
 package com.htp.matrizaev.parser;
 
+import com.htp.matrizaev.composer.Composer;
 import com.htp.matrizaev.reader.Reader;
 
 import java.util.ArrayList;
@@ -27,5 +28,8 @@ public class SymbolParser extends AbstractParser {
         for (int i = 0; i < list.size(); i++) {
             System.out.println(list.get(i));
         }
+        Composer composer = new Composer();
+        System.out.println(composer.composeText(list));
+
     }
 }
